@@ -142,10 +142,10 @@ h5 {
   color: #2B2F3B;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.9rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 h4 {
     font-size: 2.25rem;
@@ -176,7 +176,7 @@ header {
       background-color: white;
       justify-content: space-between;
       align-items: center;
-  
+      overflow: hidden; 
 
     .logo {
         width: 90px;
@@ -188,6 +188,7 @@ header {
         padding-left: 10px;
         color: #2B2F3B;
         text-decoration: none;
+        font-size: 1.25rem;
     }
     
     span {
@@ -207,7 +208,8 @@ header {
         width: 47%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        align-items: center; 
+        // text-align: center; 
         margin-right: 10px;
     
         .cta-text > h2 {
@@ -215,7 +217,6 @@ header {
         }
 
         .cta-text > p {
-            color:black;
             margin-bottom: 5px;
         }
 
@@ -235,6 +236,7 @@ header {
     }
         .front-img-container {
             width: 52%;
+            height: 100%;
         
         .front-img{
             border-radius: 10px; 
@@ -249,10 +251,10 @@ header {
     .features-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .features-content {
-        width: 48%;
+        width: 40%;
         padding-bottom: 50px;
         text-align: center;
 

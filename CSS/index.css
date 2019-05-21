@@ -142,10 +142,10 @@ h5 {
   color: #2B2F3B;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.9rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 h4 {
   font-size: 2.25rem;
@@ -171,6 +171,7 @@ header {
   background-color: white;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 header .logo {
   width: 90px;
@@ -181,6 +182,7 @@ header nav a {
   padding-left: 10px;
   color: #2B2F3B;
   text-decoration: none;
+  font-size: 1.25rem;
 }
 header span {
   padding: 8px;
@@ -197,14 +199,13 @@ header span {
   width: 47%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   margin-right: 10px;
 }
 .cta-section .cta-wrapper .cta-text > h2 {
   color: black;
 }
 .cta-section .cta-wrapper .cta-text > p {
-  color: black;
   margin-bottom: 5px;
 }
 .cta-section .cta-wrapper .cta-button {
@@ -220,6 +221,7 @@ header span {
 }
 .cta-section .front-img-container {
   width: 52%;
+  height: 100%;
 }
 .cta-section .front-img-container .front-img {
   border-radius: 10px;
@@ -230,10 +232,10 @@ header span {
 .features-section .features-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .features-section .features-content {
-  width: 48%;
+  width: 40%;
   padding-bottom: 50px;
   text-align: center;
 }
