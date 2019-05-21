@@ -196,7 +196,7 @@ header .logo {
     z-index: 2;
     position: absolute;
     right: 20px;
-    top: 15px;
+    top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -432,13 +432,16 @@ header .navbar .links-wrapper span {
     align-items: center;
   }
 }
+.top-mentors-section .top-mentors-wrapper .mentors h4 {
+  margin-bottom: 10px;
+}
 .top-mentors-section .top-mentors-wrapper .mentors .mentor-pic {
   height: 275px;
   margin-bottom: 15px;
 }
 @media (max-width: 500px) {
   .top-mentors-section .top-mentors-wrapper .mentors .mentor-pic {
-    width: 52%;
+    width: 55%;
   }
 }
 .top-mentors-section .top-mentors-wrapper .mentors .mentor-pic img {
