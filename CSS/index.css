@@ -148,7 +148,7 @@ h3 {
   font-size: 2.5rem;
 }
 h4 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 p {
   font-size: 1.6rem;
@@ -174,7 +174,7 @@ header {
   overflow: hidden;
 }
 header .logo {
-  width: 90px;
+  width: 80px;
   height: 75px;
 }
 header nav a {
@@ -251,6 +251,7 @@ header span {
   vertical-align: text-bottom;
 }
 .picSlider {
+  margin-top: 100px;
   text-align: center;
 }
 .picSlider h2 {
@@ -298,4 +299,66 @@ header span {
 }
 .picSlider .picSlider-wrapper .slider-container .active {
   display: block;
+}
+.top-mentors-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.top-mentors-section .top-mentors-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  text-align: center;
+}
+.top-mentors-section .top-mentors-wrapper .mentors {
+  width: 25%;
+}
+.top-mentors-section .top-mentors-wrapper .mentors .mentor-pic {
+  height: 275px;
+  margin-bottom: 15px;
+}
+.top-mentors-section .top-mentors-wrapper .mentors .mentor-pic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.second-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.second-cta .cta {
+  background-color: #5574F7;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+.footer nav {
+  margin-top: 15px;
+}
+.footer nav a {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.footer .logo {
+  width: 80px;
+  height: 75px;
+  margin-top: 10px;
+}
+.footer p {
+  margin-top: 10px;
+  font-size: 1rem;
 }
