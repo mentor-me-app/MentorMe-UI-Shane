@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script src="index.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="./components/MenuComponent/menu.js" async></script>
     <title>MentorMe</title>
 </head>
@@ -19,22 +20,24 @@
             <div class='navbar'>
                 <img class='menu' src='img/menu.png' alt='meun icon'>
                 <div class='links-wrapper hidden'>
-                    <a class='links' href="#LogIn">Home</a>
+                    <a class='links' href="index.html">Home</a>
                     <a class='links' href="#LogIn">Log In</a>
                     <a class='links' href="#SignUp"><span>Sign Up</span></a>
-                    <a class='links' href="#About">The Team</a>
+                    <a class='links' href="about.html">The Team</a>
                 </div>
             </div>
         </header>
 
+        <div class='content'>
             <section class="cta-section">
                 <div class='cta-wrapper'>
                     <div class='cta-text'>
                         <h2>Connecting Mentors to Entrepreneurs for the Betterment of Industries.</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum option Lorem ipsum dolor sit amet.</adipisci></p>
                     </div>
-                    <div class='cta-button'>
-                        <a class='sign-up' href="#link">Get Started</a>
+                    <div class='cta-buttons'>
+                        <a class='cta' href="#link">Get Started</a>
+                        <a class='cta color' href="#link"><span>How It Works</a>
                     </div>
                 </div>
                 <div class='front-img-container'>
@@ -43,172 +46,175 @@
             </section>
 
     <!-- features section -->
-        <section class='features-section'>
+            <section class='features-section'>
 
-            <div class='features-wrapper'>
+                <div class='features-wrapper fadeIn hide'>
+                    
+                    <div class='features-content'>
+                        <div class='features'>
+                            <h4>A Platform for Likeminded Entrepreneurs</h4><br><br>
+                            <img class='img-container' src="img/undraw_community_8nwl.svg" alt='community illustration'>
+                        </div>
+                        <div class="features-text">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum atque inventore nam. Sunt rerum ex odit, repudiandae tempore iste </p>
+                        </div>
+                    </div>
+
+                    <div class='features-content'>
+                        <div class='features'>
+                            <h4>Access to Industry Experts</h4><br><br>
+                            <div class='img-container'>
+                                <img class='feature-img' src="img/undraw_experts3_3njd.svg" alt='expert illustration'>
+                            </div>
+                        </div>
+                        <div class="features-text">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum atque inventore nam. Sunt rerum ex odit, repudiandae tempore iste </p>
+                        </div>
+                    </div>
+
+
+                    <div class='features-content'>
+                        <div class='features'>
+                            <h4>Seamless Interaction</h4><br><br>
+                            <div class='img-container'>
+                                <img class='feature-img' src="img/undraw_collab_8oes.svg" alt='collaboration illustration'>
+                            </div>
+                        </div>
+                        <div class="features-text">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum atque inventore nam. Sunt rerum ex odit, repudiandae tempore iste </p>
+                        </div>
+                    </div>
+
+                    <div class='features-content'>
+                        <div class='features'>
+                            <h4>Access to Industry Experts</h4><br><br>
+                            <div class='img-container'>
+                                <img class='brain' src="img/undraw_moving_forward_lhhd.svg" alt='moving forward illustration'>
+                            </div>
+                        </div>
+                        <div class="features-text">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum atque inventore nam. Sunt rerum ex odit, repudiandae tempore iste </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- PicSlider Component -->
+            <section class='picSlider'>
+                <h2>Here's how it works</h2>
+                <div class='picSlider-wrapper'>
+
+                    <div class='slider-container'>
+                        <div class='transparent-wrapper'>
+
+                            <div class='slider active' data-tab='1'>
+                                <img class='slider-img' src="img/holder.jpeg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit placeat.</p>
+                                <div class='slider-buttons'>
+                                    <button class='slider-button selected' data-text="1"></button>
+                                    <button class='slider-button' data-text="2"></button>
+                                    <button class='slider-button' data-text="3"></button>
+                                    <button class='slider-button' data-text="4"></button>
+
+                                </div>
+                            </div> 
+
+                            <div class='slider' data-tab='2'>
+                                <img class='slider-img' src="#" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit placeat.</p>
+                            <div class='slider-buttons'>
+                                    <button class='slider-button selected' data-text="1"></button>
+                                    <button class='slider-button' data-text="2"></button>
+                                    <button class='slider-button' data-text="3"></button>
+                                    <button class='slider-button' data-text="4"></button>
+
+                                </div>
+                            </div> 
+
+                            <div class='slider' data-tab='3'>
+                                <img class='slider-img' src="#" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit placeat.</p>
+                                <div class='slider-buttons'>
+                                    <button class='slider-button selected' data-text="1"></button>
+                                    <button class='slider-button' data-text="2"></button>
+                                    <button class='slider-button' data-text="3"></button>
+                                    <button class='slider-button' data-text="4"></button>
+    
+                                </div>
+                            </div> 
+
+                            <div class='slider' data-tab='4'>
+                                <img class='slider-img' src="#" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit placeat.</p>
+                                <div class='slider-buttons'>
+                                    <button class='slider-button selected' data-text="1"></button>
+                                    <button class='slider-button' data-text="2"></button>
+                                    <button class='slider-button' data-text="3"></button>
+                                    <button class='slider-button' data-text="4"></button>
+
+                                </div>
+                            </div> 
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        <!-- Top Contrubutors Component  -->
+            <section class='top-mentors-section'>
+                <h2>Featured Mentors</h2>
+
+                <div class='top-mentors-wrapper'>
                 
-                <div class='features-content'>
-                    <div class='features'>
-                        <h4>A Platform for Likeminded Entrepreneurs</h4><br><br>
-                        <img class='img-container' src="img/entrepreneurs.png" alt='picture of entrepreneurs'>
-                    </div>
-                    <div class="features-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum atque inventore nam. Sunt rerum ex odit, repudiandae tempore iste </p>
-                    </div>
-                </div>
-
-                <div class='features-content'>
-                    <div class='features'>
-                        <h4>Access to Industry Experts</h4><br><br>
-                        <div class='img-container'>
-                            <img class='feature-img' src="img/entrepreneurs.png" alt='picture of entrepreneurs'>
+                    <div class='mentors'>
+                    <h4>John Doe</h4>
+                        <div class='mentor-pic'>
+                            <img src='img/mensmiling.jpg' alt="picture of man similing">
                         </div>
+                        <p><span>Photographer</span></p>
+                        <p>Lorem, ipsum dolor</p>
                     </div>
-                    <div class="features-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum atque inventore nam. Sunt rerum ex odit, repudiandae tempore iste </p>
-                    </div>
-                </div>
 
-
-                <div class='features-content'>
-                    <div class='features'>
-                        <h4>Seamless Interaction</h4><br><br>
-                        <div class='img-container'>
-                            <img class='feature-img' src="img/seamless.png" alt='a group of people shaking hands'>
+                    <div class='mentors'>
+                        <h4>Sarah Mack</h4>
+                        <div class='mentor-pic'>
+                            <img src='img/woman-similing.jpg' alt="picture of woman smiling">
                         </div>
+                        <p><span>Chef</span></p>
+                        <p>Lorem, ipsum dolor</p>
                     </div>
-                    <div class="features-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum atque inventore nam. Sunt rerum ex odit, repudiandae tempore iste </p>
-                    </div>
-                </div>
 
-                <div class='features-content'>
-                    <div class='features'>
-                        <h4>Access to Industry Experts</h4><br><br>
-                        <div class='img-container'>
-                            <img class='brain' src="img/seamless.png" alt='woman making a beverage'>
+                    <div class='mentors'>
+                        <h4>Mark Smith</h4>
+                        <div class='mentor-pic'>
+                            <img src='img/mensmiling2.jpg' alt="picture of man smiling">
                         </div>
-                    </div>
-                    <div class="features-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum atque inventore nam. Sunt rerum ex odit, repudiandae tempore iste </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- PicSlider Component -->
-        <section class='picSlider'>
-            <h2>Here's how it works</h2>
-            <div class='picSlider-wrapper'>
-
-                <div class='slider-container'>
-                    <div class='transparent-wrapper'>
-
-                        <div class='slider active' data-tab='1'>
-                            <img class='slider-img' src="img/holder.jpeg" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit placeat.</p>
-                            <div class='slider-buttons'>
-                                <button class='slider-button selected' data-text="1"></button>
-                                <button class='slider-button' data-text="2"></button>
-                                <button class='slider-button' data-text="3"></button>
-                                <button class='slider-button' data-text="4"></button>
-
-                            </div>
-                        </div> 
-
-                        <div class='slider' data-tab='2'>
-                            <img class='slider-img' src="#" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit placeat.</p>
-                         <div class='slider-buttons'>
-                                <button class='slider-button selected' data-text="1"></button>
-                                <button class='slider-button' data-text="2"></button>
-                                <button class='slider-button' data-text="3"></button>
-                                <button class='slider-button' data-text="4"></button>
-
-                            </div>
-                        </div> 
-
-                        <div class='slider' data-tab='3'>
-                            <img class='slider-img' src="#" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit placeat.</p>
-                            <div class='slider-buttons'>
-                                <button class='slider-button selected' data-text="1"></button>
-                                <button class='slider-button' data-text="2"></button>
-                                <button class='slider-button' data-text="3"></button>
-                                <button class='slider-button' data-text="4"></button>
- 
-                            </div>
-                        </div> 
-
-                        <div class='slider' data-tab='4'>
-                            <img class='slider-img' src="#" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit placeat.</p>
-                            <div class='slider-buttons'>
-                                <button class='slider-button selected' data-text="1"></button>
-                                <button class='slider-button' data-text="2"></button>
-                                <button class='slider-button' data-text="3"></button>
-                                <button class='slider-button' data-text="4"></button>
-
-                            </div>
-                        </div> 
-
+                        <p><span>Venture Capitalist</span></p>
+                        <p>Lorem, ipsum dolor</p>
                     </div>
                 </div>
+            </section>
 
-            </div>
-        </section>
-
-    <!-- Top Contrubutors Component  -->
-        <section class='top-mentors-section'>
-            <h2>Top Mentors</h2>
-
-            <div class='top-mentors-wrapper'>
-            
-                <div class='mentors'>
-                <h4>John Doe</h4>
-                    <div class='mentor-pic'>
-                        <img src='img/mensmiling.jpg' alt="picture of man similing">
-                    </div>
-                    <p><span>Photographer</span></p>
-                    <p>Lorem, ipsum dolor</p>
+            <section class='second-cta'>
+                <a href="#" class='cta'>Join the Community</a>
+                <div class='second-cta-text'>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem asperiores iste ipsum obcaecati alias beatae quo.</p>
                 </div>
-
-                <div class='mentors'>
-                    <h4>Sarah Mack</h4>
-                    <div class='mentor-pic'>
-                        <img src='img/woman-similing.jpg' alt="picture of woman smiling">
-                    </div>
-                    <p><span>Chef</span></p>
-                    <p>Lorem, ipsum dolor</p>
-                </div>
-
-                <div class='mentors'>
-                    <h4>Mark Smith</h4>
-                    <div class='mentor-pic'>
-                        <img src='img/mensmiling2.jpg' alt="picture of man smiling">
-                    </div>
-                    <p><span>Venture Capitalist</span></p>
-                    <p>Lorem, ipsum dolor</p>
-                </div>
-            </div>
-        </section>
-
-        <section class='second-cta'>
-            <button class='cta'>Sign Up - Join the Community</button>
-            <div class='second-cta-text'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem asperiores iste ipsum obcaecati alias beatae quo.</p>
-            </div>
-        </section>
+            </section>
+        </div>
 
 
         <!-- Footer -->
         <section class='footer'>
             <div class='footer-nav'>
                 <nav>
+                    <a href="index.html">Home</a>
                     <a href="#LogIn">Log In</a>
-                    <a href="#theTeam">About</a>
+                    <a href="#Sign Up">Sign Up</a>
+                    <a href='about.html'>The Team</a>
                 </nav>
             </div>
             <div class='footer-logo'>
