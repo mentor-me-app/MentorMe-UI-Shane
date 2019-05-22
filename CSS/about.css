@@ -1,0 +1,327 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2B2F3B;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2B2F3B;
+}
+h2 {
+  font-size: 2.9rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.7rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.container {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 1.25% 15px;
+  background: #ffffff;
+  background: linear-gradient(180deg, #ffffff 98%, rgba(88, 135, 249, 0.3) 100%);
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
+header {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+header .logo {
+  width: 80px;
+  height: 75px;
+}
+@media (max-width: 500px) {
+  header .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 500px) {
+  header .navbar {
+    z-index: 2;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .navbar .menu {
+  width: 45px;
+  height: 45px;
+  display: none;
+}
+@media (max-width: 500px) {
+  header .navbar .menu {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  header .navbar .links-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .navbar .links-wrapper a {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #2B2F3B;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+@media (max-width: 500px) {
+  header .navbar .links-wrapper a {
+    margin-top: 10px;
+  }
+}
+header .navbar .links-wrapper span {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #5574F7;
+  color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  header .navbar .links-wrapper span {
+    background-color: #FFFFFF;
+    color: #2B2F3B;
+  }
+}
+@media (max-width: 500px) {
+  header .navbar .hidden {
+    display: none;
+  }
+}
+.meet-the-team-header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-profiles {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin-top: 30px;
+}
+.team-profiles .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.team-profiles .team h5 {
+  padding-bottom: 10px;
+}
+.team-profiles .team .img-container {
+  width: 40%;
+}
+.team-profiles .team .img-container img {
+  height: 130px;
+  position: relative;
+  box-shadow: 0.05px 0.05px 1px 1px rgba(76, 82, 100, 0.2);
+}
+.team-profiles .team .img-container img:hover {
+  opacity: 0.6;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.team-profiles .team .icons {
+  width: 25px;
+  height: 25px;
+}
+.team-profiles .team .icons img {
+  margin-right: 1px;
+}
+.team-profiles .team p {
+  margin-top: 10px;
+}
+.team-profiles .placeholder-hidden {
+  border: 1px solid red;
+  visibility: hidden;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+.footer nav {
+  margin-top: 15px;
+}
+.footer nav a {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #2B2F3B;
+}
+.footer .logo {
+  width: 80px;
+  height: 75px;
+  margin-top: 15px;
+}
+.footer p {
+  margin-top: 10px;
+  font-size: 1rem;
+}

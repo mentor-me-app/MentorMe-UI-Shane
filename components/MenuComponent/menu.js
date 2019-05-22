@@ -15,7 +15,6 @@ const menuToggle = document.querySelector('.menu')
 
 const newMenu = new Menu(menuToggle);
 
-console.log(menuToggle)
 
 
 

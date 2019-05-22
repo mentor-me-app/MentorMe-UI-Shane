@@ -1,2 +1,2 @@
-const ctaButton = document.querySelector('.cta-button')
+const ctaButton = document.querySelector('.sign-up')
 console.log(ctaButton)
