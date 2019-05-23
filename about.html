@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/about.css" />
+    <script src="about.js" async></script>
+    <script src="./components/MenuComponent/menu.js" async></script>
     <title>Meet the Team</title>
 </head>
 <body>
@@ -13,14 +15,16 @@
     <!-- Start of container -->
     <div class='container'>
         <header>
-            <img class='logo' src='img/mentormelogo.png' alt='logo'>
+            <div class='logo-container'>
+                <img class='logo' src='img/logo.svg' alt='logo'>
+            </div>
             <div class='navbar'>
-                <img class='menu' src='img/menu.png' alt='meun icon'>
-                <div class='links-wrapper hidden'>
-                    <a class='links' href="index.html">Home</a>
-                    <a class='links' href="#LogIn">Log In</a>
-                    <a class='links' href="#SignUp"><span>Sign Up</span></a>
-                    <a class='links' href="about.html">The Team</a>
+                <img class='menu' src='img/hamburger.png' alt='meun icon'>
+                <div class='links-wrapper'>
+                    <a class='links hidden' href="index.html">Home</a>
+                    <a class='links hidden' href="#LogIn">Log In</a>
+                    <a class='links hidden' href="#SignUp"><span>Sign Up</span></a>
+                    <a class='links hidden' href="about.html">The Team</a>
                 </div>
             </div>
         </header>
@@ -35,102 +39,126 @@
 
     <!-- Team Profiles -->
 
-    <section class='team-profiles'>
-        <div class='team'>
-            <h5>Sulaiman (Yemi) Abidemi</h5>
-            <div class='img-container'>
-                <img src='/img/yemi.jpeg' alt='picture of Sulaiman (Yemi)'>
+        <section class='team-profiles'>
+            <div class='team'>
+                <h5>Sulaiman (Yemi) Abidemi</h5>
+                <div class='img-container'>
+                    <img src='/img/yemi.jpeg' alt='picture of Sulaiman (Yemi)'>
+                </div>
+                <p>UI Developer</p>
+                <div class='icons'>
+                    <a href="#"><img src='/img/linkedin.png' alt="LinkedIn Icon"></a>
+                    <a href="#"><img src='/img/github.png' alt='GitHub Icon'></a>
+                </div>
             </div>
-            <p>UI Developer</p>
-            <div class='icons'>
-                <a href="#"><img src='/img/LI.svg' alt="LinkedIn Icon"></a>
-                <a href="#"><img src='/img/github.png' alt='GitHub Icon'></a>
+
+            <div class='team'>
+                <h5>Katie Felten</h5>
+                <div class='img-container'>
+                    <img src='/img/katie.jpg' alt='picture of Katie'>
+                </div>
+                <p>UI Developer</p>
+                <div class='icons'>
+                    <a href="#"><img src='/img/linkedin.png' alt="LinkedIn Icon"></a>
+                    <a href="#"><img src='/img/github.png' alt='GitHub Icon'></a>
+                </div>
             </div>
-        </div>
 
-        <div class='team'>
-            <h5>Katie Felten</h5>
-            <div class='img-container'>
-                <img src='/img/katie.jpg' alt='picture of Katie'>
+            <div class='team'>
+                <h5>Shane Gooch</h5>
+                <div class='img-container'>
+                    <img src='/img/Picture of Me.jpg' alt='picture of Shane'>
+                </div>
+                <p>UI Developer</p>
+                <div class='icons'>
+                    <a href="#"><img src='/img/linkedin.png' alt="LinkedIn Icon"></a>
+                    <a href="#"><img src='/img/github.png' alt='GitHub Icon'></a>
+                </div>
             </div>
-            <p>UI Developer</p>
-        </div>
 
-        <div class='team'>
-            <h5>Shane Gooch</h5>
-            <div class='img-container'>
-                <img src='/img/Picture of Me.jpg' alt='picture of Shane'>
+            <div class='team'>
+                <h5>Joe Alfaro</h5>
+                <div class='img-container'>
+                    <img src='/img/joe.png' alt='picture of Joe'>
+                </div>
+                <p>Back-End Developer</p>
+                <div class='icons'>
+                    <a href="#"><img src='/img/linkedin.png' alt="LinkedIn Icon"></a>
+                    <a href="#"><img src='/img/github.png' alt='GitHub Icon'></a>
+                </div>
             </div>
-            <p>UI Developer</p>
-        </div>
 
-        <div class='team'>
-            <h5>Joe Alfaro</h5>
-            <div class='img-container'>
-                <img src='/img/joe.png' alt='picture of Joe'>
+            <div class='team'>
+                <h5>Mark La Monica</h5>
+                <div class='img-container'>
+                    <img src='/img/mark.jpeg' alt='picture of Mark'>
+                </div>
+                <p>UX Desinger</p>
+                <div class='icons'>
+                    <a href="#"><img src='/img/linkedin.png' alt="LinkedIn Icon"></a>
+                    <a href="#"><img src='/img/github.png' alt='GitHub Icon'></a>
+                </div>
             </div>
-            <p>Back-End Developer</p>
-        </div>
 
-        <div class='team'>
-            <h5>Mark La Monica</h5>
-            <div class='img-container'>
-                <img src='/img/mark.jpeg' alt='picture of Mark'>
+            <div class='team'>
+                <h5>Aruna Benjamin</h5>
+                <div class='img-container'>
+                    <img src='/img/aruna.jpg' alt='picture of Aruna'>
+                </div>
+                <p>Front-End Developer</p>
+                <div class='icons'>
+                    <a href="#"><img src='/img/linkedin.png' alt="LinkedIn Icon"></a>
+                    <a href="#"><img src='/img/github.png' alt='GitHub Icon'></a>
+                </div>
             </div>
-            <p>UX Desinger</p>
-        </div>
 
-        <div class='team'>
-            <h5>Aruna Benjamin</h5>
-            <div class='img-container'>
-                <img src='/img/joe.png' alt='picture of Savannah'>
+            <div class='team placeholder-hidden'>
+                <h5></h5>
+                <div class='img-container'>
+                    <img src='/img/joe.png' alt='picture of Savannah'>
+                </div>
+                <p></p>
             </div>
-            <p>Front-End Developer</p>
-        </div>
 
-        <div class='team placeholder-hidden'>
-            <h5></h5>
-            <div class='img-container'>
-                <img src='/img/joe.png' alt='picture of Savannah'>
+            <div class='team'>
+                <h5>Savannah Greuel</h5>
+                <div class='img-container'>
+                    <img src='/img/savannah.png' alt='picture of Savannah'>
+                </div>
+                <p>Team Lead</p>
+                <div class='icons'>
+                    <a href="#"><img src='/img/linkedin.png' alt="LinkedIn Icon"></a>
+                    <a href="#"><img src='/img/github.png' alt='GitHub Icon'></a>
+                </div>
             </div>
-            <p></p>
-        </div>
 
-        <div class='team'>
-            <h5>Savannah Greuel</h5>
-            <div class='img-container'>
-                <img src='/img/joe.png' alt='picture of Savannah'>
+            <div class='team placeholder-hidden'>
+                <h5></h5>
+                <div class='img-container'>
+                    <img src='/img/joe.png' alt='picture of Savannah'>
+                </div>
+                <p></p>
             </div>
-            <p>Team Lead</p>
-        </div>
 
-        <div class='team placeholder-hidden'>
-            <h5></h5>
-            <div class='img-container'>
-                <img src='/img/joe.png' alt='picture of Savannah'>
+        </section>
+
+        <!-- Footer section  -->
+        <section class='footer'>
+            <div class='nav'>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="#LogIn">Log In</a>
+                    <a href="#Sign Up">Sign Up</a>
+                    <a href='about.html'>The Team</a>
+                </nav>
             </div>
-            <p></p>
-        </div>
+            <div class='logo-container'>
+                <img class='logo' src='img/logo.svg' alt='logo'>
+            </div>
+            <p>Copyright of MentorMe 2019.</p>
+        </section>
 
-    </section>
-
-    <!-- Footer section  -->
-    <section class='footer'>
-        <div class='footer-nav'>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="#LogIn">Log In</a>
-                <a href="#SignUp">Sign-Up</a>
-                <a href="about.html">About</a>
-            </nav>
-        </div>
-        <div class='footer-logo'>
-            <img class='logo' src='img/mentormelogo.png' alt='picture of logo'>
-        </div>
-        <p>Copyright of mentorme 2019.</p>
-    </section>
-
-</div>
+    </div>
     <!-- End of container -->
 </body>
 </html>

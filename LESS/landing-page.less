@@ -127,6 +127,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  
 }
 html,
 body {
@@ -163,7 +164,7 @@ img{
 
 
 .container {
-    max-width: 1000px;
+    max-width: 950px;
     margin: 0 auto;
     padding: 0px 1.25% 15px;
     background: rgb(255,255,255);
@@ -177,11 +178,11 @@ img{
 header {
       width: 100%;
       height: 70px; 
-      padding-top: 20px;
+      padding: 20px 1.25px 15px; 
       display: flex;
       flex-direction: row;
       background-color: white;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       overflow: hidden;
 
@@ -203,10 +204,10 @@ header {
     .navbar{
 
         @media @phone {
-            z-index: 2;
-            position: absolute;
-            right: 20px;
-            top: 20px; 
+            // z-index: 2;
+            // position: absolute;
+            // right: 20px;
+            // top: 20px; 
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -237,15 +238,16 @@ header {
                 text-decoration: none;
                 font-size: 1.25rem;
                 transition: 0.5s ease; 
+                    
+                }
 
-                &:hover{
+                a:hover{
                    text-decoration: underline;
                 }
 
                 @media @phone {
                     margin-top: 10px;  
                     }
-                }
 
             span {
                 padding: 8px;
@@ -264,23 +266,27 @@ header {
                     color: #2B2F3B;
                 }
             }
-
         }
 
-        .hidden{
-
-            @media @phone{
-            display: none; 
-            }
-        }
+    }
         
+}
+
+
+.hidden{
+    @media @phone {
+    visibility: hidden;
     }
 }
 
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%; 
+    max-width: 950px; 
+
+    .navbar{
+        padding-right: 10px; 
+    }
 }
 
 .sticky + .content {
@@ -319,6 +325,12 @@ header {
 
         .cta-buttons{
             margin-top: 20px; 
+
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+            }
             .cta {
                 background-color:#5574F7;
                 color: #FFFFFF;
@@ -557,6 +569,7 @@ header {
 .footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center; 
     margin-top: 50px; 
 
@@ -569,8 +582,13 @@ header {
            color: #2B2F3B;
        }
     }
-    .bottom{
-      width: 250px; 
+
+    .logo-container{
+        width: 300px; 
+
+        .logo {
+            width: 100%;
+        }
     }
 
     p {

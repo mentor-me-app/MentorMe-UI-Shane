@@ -1,6 +1,6 @@
 //NavBar
 
-window.onscroll = function() {fixed()}
+window.onload = function() {fixed()}
 const header = document.querySelector('header');
 const headerStick = header.offsetTop;
 function fixed(){
@@ -41,8 +41,53 @@ function jumpTo() {
 // const jumpTo = document.querySelector('.picSlider-wrapper').pageYOffset;
 // console.log(jumpTo)
 
+//Featured Mentors
+
+mentors = [
+        {
+        'id': 1, 
+        'name': 'John Smith',
+        'img': 'img/access.jpg',
+        'job': 'Baker',
+        'detail': '5 years of baking',
+    },
+
+        {
+        'id': 2, 
+        'name': 'Jerry Tom',
+        'img': 'img/mensmiling.jpg',
+        'job': 'Club Owner',
+        'detail': 'Consultant for MGM',
+    },
+
+        {
+        'id': 3, 
+        'name': 'Beth Tuck',
+        'img': 'img/mensmiling.jpg',
+        'job': 'Restaurant Owner',
+        'detail': 'Over 30 years in the restaurant industry. '
+    },
+
+]
+
+console.log(mentors[0].img)
+
+const nextButton = document.querySelector('.see-more');
+const names = Array.from(document.querySelectorAll('.next'));
+console.log(names)
+const mentorPicture = Array.from(document.querySelectorAll('.pic'));
 
 
+
+const next = nextButton.onclick = function () {goNext(mentors)};
+
+
+function goNext(arr) {
+
+    mentorPicture[0].setAttribute('src');
+``
+
+}
 
 
 

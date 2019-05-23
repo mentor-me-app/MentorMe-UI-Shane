@@ -1,13 +1,15 @@
 class Menu {
     constructor(menuButton) {
         this.menuButton = menuButton;
-        this.link = document.querySelector('.links-wrapper')
+        this.links = document.querySelectorAll('.links')
         this.menuButton.addEventListener('click', () => {
             this.toggleMenu()
         })
     }
     toggleMenu() {
-        this.link.classList.toggle('hidden');
+        this.links.forEach((link) => {
+            link.classList.toggle('hidden')
+        })
     }
 }
 

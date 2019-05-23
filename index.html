@@ -7,9 +7,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="index.js" async></script>
     <script src="./components/MenuComponent/menu.js" async></script>
-    <script src="./components/Mentor/mentor.js" async></script>
     <title>MentorMe</title>
 </head>
 
@@ -22,11 +20,11 @@
             </div>
             <div class='navbar'>
                 <img class='menu' src='img/menu.png' alt='meun icon'>
-                <div class='links-wrapper hidden'>
-                    <a class='links' href="index.html">Home</a>
-                    <a class='links' href="#LogIn">Log In</a>
-                    <a class='links' href="#SignUp"><span>Sign Up</span></a>
-                    <a class='links' href="about.html">The Team</a>
+                <div class='links-wrapper'>
+                    <a class='links hidden' href="index.html">Home</a>
+                    <a class='links hidden' href="#LogIn">Log In</a>
+                    <a class='links hidden sign-up' href="#SignUp">Sign Up</a>
+                    <a class='links hidden' href="about.html">The Team</a>
                 </div>
             </div>
         </header>
@@ -171,31 +169,31 @@
                 <h2>Featured Mentors</h2>
 
                 <div class='top-mentors-wrapper'>
-                
+                <button class='see-more'>></button>
                     <div class='mentors'>
-                    <h4>John Doe</h4>
+                    <h4 class ='next'>John Doe</h4>
                         <div class='mentor-pic'>
-                            <img src='img/mensmiling.jpg' alt="picture of man similing">
+                            <img class='pic' src='img/mensmiling.jpg' alt="picture of man similing">
                         </div>
-                        <p><span>Photographer</span></p>
+                        <p class='next'><span>Photographer</span></p>
                         <p>Lorem, ipsum dolor</p>
                     </div>
 
                     <div class='mentors'>
-                        <h4>Sarah Mack</h4>
+                        <h4 class='next'>Sarah Mack</h4>
                         <div class='mentor-pic'>
-                            <img src='img/woman-similing.jpg' alt="picture of woman smiling">
+                            <img class='pic'src='img/woman-similing.jpg' alt="picture of woman smiling">
                         </div>
-                        <p><span>Chef</span></p>
+                        <p class='next'><span>Chef</span></p>
                         <p>Lorem, ipsum dolor</p>
                     </div>
 
                     <div class='mentors'>
-                        <h4>Mark Smith</h4>
+                        <h4 class='next'>Mark Smith</h4>
                         <div class='mentor-pic'>
-                            <img src='img/mensmiling2.jpg' alt="picture of man smiling">
+                            <img class='pic'src='img/mensmiling2.jpg' alt="picture of man smiling">
                         </div>
-                        <p><span>Venture Capitalist</span></p>
+                        <p class='next'><span>Venture Capitalist</span></p>
                         <p>Lorem, ipsum dolor</p>
                     </div>
                 </div>
@@ -212,7 +210,7 @@
 
         <!-- Footer -->
         <section class='footer'>
-            <div class='footer-nav'>
+            <div class='nav'>
                 <nav>
                     <a href="index.html">Home</a>
                     <a href="#LogIn">Log In</a>
@@ -223,10 +221,11 @@
             <div class='logo-container'>
                 <img class='logo' src='img/logo.svg' alt='logo'>
             </div>
-            <p>Copyright of mentorme 2019.</p>
+            <p>Copyright of MentorMe 2019.</p>
         </section>
     </div>
 <!-- End of container -->
+<script src="index.js" async></script>
 <body>
     
 </body>

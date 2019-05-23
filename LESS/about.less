@@ -182,39 +182,45 @@ img{
   }
 
 header {
-      padding: 10px;
+      width: 100%;
+      height: 70px; 
+      padding: 20px 1.25px 15px; 
       display: flex;
       flex-direction: row;
       background-color: white;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
-      overflow: hidden; 
+      border: 1px solid red;
+    //   overflow: hidden;
+      z-index: 98; 
 
-    .logo {
-        width: 80px;
-        height: 75px; 
+    .logo-container{
+        width: 300px; 
 
-        @media @phone {
-            margin-left: auto;
-            margin-right: auto; 
+        .logo {
+            // float: left;
+            display: block;
+            width: 100%;
+
+            @media @phone {
+               
+            }
         }
     }
 
     .navbar{
 
         @media @phone {
-            z-index: 2;
-            position: absolute;
-            right: 20px;
-            top: 20px; 
             display: flex;
             flex-direction: column;
             align-items: center;
+            border: 1px solid red;
+             
         }
 
         .menu{
-            width: 45px;
-            height: 45px; 
+            width: 30px;
+            height: 30px; 
             display: none; 
 
             @media @phone {
@@ -228,6 +234,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                border: 1px solid red;
             }
             
             a {
@@ -236,50 +243,67 @@ header {
                 color: #2B2F3B;
                 text-decoration: none;
                 font-size: 1.25rem;
+                transition: 0.5s ease; 
+                border: 1px solid red;
+                    
+                }
+
+                a:hover{
+                   text-decoration: underline;
+                }
 
                 @media @phone {
                     margin-top: 10px;  
                     }
-                }
 
-            span {
+            .color {
                 padding: 8px;
                 border-radius: 5px;
                 background-color: #5574F7;
                 color: #FFFFFF;
+                transition: 0.5s ease; 
+
+                &:hover{
+                    background-color: white;
+                    color: #2B2F3B;
+                }
 
                 @media @phone {
                     background-color:#FFFFFF;
-                    color: #2B2F3B;;
+                    color: #2B2F3B;
                 }
             }
-
         }
 
-        .hidden{
-
-            @media @phone{
-            display: none; 
-            }
-        }
-        
     }
-
+        
 }
 
-// .background-img-container{
-//     width: 70%;
-//     height: 300px; 
-//     margin-left: auto;
-//     margin-right: auto; 
 
-//     .backgroung-img{
-//         width: 80%; 
-//     }
-// }
+.hidden{
+    @media @phone {
+    display: none;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    max-width: 950px; 
+
+    .navbar{
+        padding-right: 10px; 
+    }
+}
+
+.sticky + .content {
+    padding-top: 100px; 
+}
+
+
 
 .meet-the-team-header{
-    margin-top: 20px; 
+    margin-top: 100px; 
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -290,22 +314,31 @@ header {
     flex-wrap: wrap-reverse;
     justify-content: center; 
     margin-top: 30px; 
+
+    @media @phone {
+        display: flex; 
+        flex-direction: column-reverse;
+        align-items: center;
+    }
     
     .team{
         display: flex;
         flex-direction: column;
         align-items: center; 
+        text-align: center; 
         width: 30%; 
         margin-top: 20px; 
         margin-bottom: 20px; 
 
         h5{
             padding-bottom: 10px; 
+            width: 200px; 
         }
         .img-container{
-            width: 40%;
+            width: 112px;
 
             img{
+                width: 100%; 
                 height: 130px;
                 position: relative;
                 box-shadow: .05px .05px 1px 1px rgba(76, 82, 100, 0.2);
@@ -318,10 +351,10 @@ header {
         }
         
         .icons{
-           
-            width: 25px;
-            height: 25px;
-
+            width: 50px;
+            height: 50px;
+            display: flex;
+            
             img{
                margin-right: 1px; 
             }
@@ -335,6 +368,10 @@ header {
     .placeholder-hidden{
         border: 1px solid red; 
         visibility: hidden; 
+
+        @media @phone {
+            display: none; 
+        }
     }
 }
 
@@ -342,8 +379,9 @@ header {
 .footer{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center; 
-    margin-top: 50px; 
+    margin-top: 40px; 
 
     nav {
        margin-top: 15px; 
@@ -354,10 +392,14 @@ header {
            color: #2B2F3B;
        }
     }
-    .logo{
-        width: 80px;
-        height: 75px;
-        margin-top: 15px; 
+
+    .logo-container{
+        width: 300px; 
+        margin-top: 35px; 
+
+        .logo{
+            width: 100%px
+        }
     }
 
     p {
