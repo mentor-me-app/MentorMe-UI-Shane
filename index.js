@@ -20,7 +20,7 @@ document.onscroll = function() {fadeIn()}
 const features = document.querySelector('.features-wrapper');
 const featureScroll = features.offsetTop;
 function fadeIn() {
-    if((window.pageYOffset + 300) >= featureScroll) {
+    if((window.pageYOffset + 550) >= featureScroll) {
         features.classList.add('fadeIn');
         features.classList.remove('hide');
     } else {
@@ -47,7 +47,6 @@ mentors = [
         {
         'id': 1, 
         'name': 'John Smith',
-        'img': 'img/access.jpg',
         'job': 'Baker',
         'detail': '5 years of baking',
     },
@@ -55,7 +54,6 @@ mentors = [
         {
         'id': 2, 
         'name': 'Jerry Tom',
-        'img': 'img/mensmiling.jpg',
         'job': 'Club Owner',
         'detail': 'Consultant for MGM',
     },
@@ -63,14 +61,11 @@ mentors = [
         {
         'id': 3, 
         'name': 'Beth Tuck',
-        'img': 'img/mensmiling.jpg',
         'job': 'Restaurant Owner',
         'detail': 'Over 30 years in the restaurant industry. '
     },
 
 ]
-
-console.log(mentors[0].img)
 
 const nextButton = document.querySelector('.see-more');
 const names = Array.from(document.querySelectorAll('.next'));

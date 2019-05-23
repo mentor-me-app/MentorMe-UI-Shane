@@ -165,6 +165,7 @@ img{
 
 .container {
     max-width: 950px;
+    width: 100%;
     margin: 0 auto;
     padding: 0px 1.25% 15px;
     background: rgb(255,255,255);
@@ -184,42 +185,39 @@ header {
       background-color: white;
       justify-content: space-around;
       align-items: center;
-      overflow: hidden;
+      z-index: 98;
+      
+      @media @phone {
+          display: flex;
+          
+      }
 
     .logo-container{
         width: 300px; 
 
         .logo {
-            float: left;
+            // float: left;
             display: block;
             width: 100%;
-
-            @media @phone {
-                margin-left: auto;
-                margin-right: auto; 
-            }
         }
     }
 
     .navbar{
 
         @media @phone {
-            // z-index: 2;
-            // position: absolute;
-            // right: 20px;
-            // top: 20px; 
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
         .menu{
-            width: 45px;
-            height: 45px; 
+            width: 30px;
+            height: 30px; 
             display: none; 
 
             @media @phone {
-                display: block; 
+                display: block;
+                width: 30px;   
             }
         }
 
@@ -229,6 +227,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                background: white;
             }
             
             a {
@@ -238,23 +237,25 @@ header {
                 text-decoration: none;
                 font-size: 1.25rem;
                 transition: 0.5s ease; 
-                    
+                
+                
                 }
 
                 a:hover{
                    text-decoration: underline;
                 }
 
-                @media @phone {
-                    margin-top: 10px;  
-                    }
-
-            span {
+            .sign-up {
                 padding: 8px;
                 border-radius: 5px;
                 background-color: #5574F7;
                 color: #FFFFFF;
-                transition: 0.5s ease; 
+                transition: 0.5s ease;
+                
+                @media @phone {
+                    padding: 0px;
+                    border-radius: 0px; 
+                }
 
                 &:hover{
                     background-color: white;
@@ -275,7 +276,7 @@ header {
 
 .hidden{
     @media @phone {
-    visibility: hidden;
+    display: none;
     }
 }
 
@@ -292,6 +293,7 @@ header {
 .sticky + .content {
     padding-top: 100px; 
 }
+
 
 .cta-section {
     display: flex;
@@ -429,7 +431,7 @@ header {
 }
 
 .picSlider {
-    margin-top: 100px; 
+    margin-top: 75px; 
     text-align: center;
 
      h2 {
@@ -492,7 +494,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin-top: 120px; 
+    margin-top: 75px; 
 
     .top-mentors-wrapper{
         display: flex;
