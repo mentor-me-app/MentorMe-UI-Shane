@@ -184,8 +184,12 @@ header {
   background-color: white;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid red;
   z-index: 98;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+  }
 }
 header .logo-container {
   width: 300px;
@@ -199,7 +203,6 @@ header .logo-container .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
   }
 }
 header .navbar .menu {
@@ -210,6 +213,7 @@ header .navbar .menu {
 @media (max-width: 500px) {
   header .navbar .menu {
     display: block;
+    width: 30px;
   }
 }
 @media (max-width: 500px) {
@@ -218,7 +222,7 @@ header .navbar .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    background: white;
   }
 }
 header .navbar .links-wrapper a {
@@ -228,29 +232,29 @@ header .navbar .links-wrapper a {
   text-decoration: none;
   font-size: 1.25rem;
   transition: 0.5s ease;
-  border: 1px solid red;
 }
 header .navbar .links-wrapper a:hover {
   text-decoration: underline;
 }
-@media (max-width: 500px) {
-  header .navbar .links-wrapper {
-    margin-top: 10px;
-  }
-}
-header .navbar .links-wrapper .color {
+header .navbar .links-wrapper .sign-up {
   padding: 8px;
   border-radius: 5px;
   background-color: #5574F7;
   color: #FFFFFF;
   transition: 0.5s ease;
 }
-header .navbar .links-wrapper .color:hover {
+@media (max-width: 500px) {
+  header .navbar .links-wrapper .sign-up {
+    padding: 0px;
+    border-radius: 0px;
+  }
+}
+header .navbar .links-wrapper .sign-up:hover {
   background-color: white;
   color: #2B2F3B;
 }
 @media (max-width: 500px) {
-  header .navbar .links-wrapper .color {
+  header .navbar .links-wrapper .sign-up {
     background-color: #FFFFFF;
     color: #2B2F3B;
   }
@@ -296,8 +300,7 @@ header .navbar .links-wrapper .color:hover {
   align-items: center;
   text-align: center;
   width: 30%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
 }
 .team-profiles .team h5 {
   padding-bottom: 10px;
@@ -316,6 +319,7 @@ header .navbar .links-wrapper .color:hover {
   opacity: 0.6;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  cursor: pointer;
 }
 .team-profiles .team .icons {
   width: 50px;
@@ -329,13 +333,15 @@ header .navbar .links-wrapper .color:hover {
   margin-top: 10px;
 }
 .team-profiles .placeholder-hidden {
-  border: 1px solid red;
   visibility: hidden;
 }
 @media (max-width: 500px) {
   .team-profiles .placeholder-hidden {
     display: none;
   }
+}
+.hide {
+  visibility: hidden;
 }
 .footer {
   display: flex;
