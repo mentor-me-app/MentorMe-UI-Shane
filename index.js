@@ -61,9 +61,42 @@ function fadeIn() {
 
 ///picSlider Component 
 
+// class PicSlider {
+//     constructor(picture){
+//         this.picture = picture;
+//         this.data = picture.dataset.text;
+//         this.sliderContent = document.querySelector('.slider[data-text="${this.data}"}');
+//         this.buttonItem = new PicItem(this.sliderContent);
+//         this.picture.addEventListener('click', () => this.next())
+//     };
+//     next() {
+//         const buttons = document.querySelectorAll('.slider-button');
+//         Array.from(links).forEach((el) => {
+//             el.classList.remove('selected')
+//         })
+//         this.picture.classList.add('selected')
+//         this.buttonItem.next()
+//     }
+// }
 
+// class PicItem {
+//     constructor(item) {
+//         this.item = item
 
+//     }
+//     next() {
+//         const items = document.querySelectorAll('.slider')
+//         items.forEach((element) => {
+//             element.classList.remove('selected')
+//         })
+//         this.item.classList.add('selected')
+//     }
+// }
 
+// const buttons = document.querySelectorAll('.slider-button')
+// buttons.forEach((button) => {
+//     return new PicSlider(button)
+// })
 
 //Featured Mentors
 
@@ -91,22 +124,22 @@ mentors = [
 
 ]
 
-const nextButton = document.querySelector('.see-more');
-const names = Array.from(document.querySelectorAll('.next'));
+// const nextButton = document.querySelector('.see-more');
+// const names = Array.from(document.querySelectorAll('.next'));
 
-const mentorPicture = Array.from(document.querySelectorAll('.pic'));
-
-
-
-const next = nextButton.onclick = function () {goNext(mentors)};
+// const mentorPicture = Array.from(document.querySelectorAll('.pic'));
 
 
-function goNext(arr) {
 
-    mentorPicture[0].setAttribute('src');
-``
+// const next = nextButton.onclick = function () {goNext(mentors)};
 
-}
+
+// function goNext(arr) {
+
+//     mentorPicture[0].setAttribute('src');
+// ``
+
+// }
 
 
 

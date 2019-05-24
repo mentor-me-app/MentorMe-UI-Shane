@@ -318,6 +318,9 @@ header {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 @media (max-width: 500px) {
   .cta-section .cta-wrapper {
@@ -339,12 +342,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
   }
 }
 .cta-section .cta-wrapper .cta-buttons .cta {
   background-color: #5574F7;
   color: #FFFFFF;
-  width: 45%;
+  width: 60%;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.25rem;
@@ -359,10 +363,6 @@ header {
   cursor: pointer;
   text-decoration: underline;
 }
-.cta-section .cta-wrapper .cta-buttons .color {
-  background-color: #f7d855;
-  color: #2B2F3B;
-}
 .cta-section .front-img-container {
   width: 52%;
   height: 100%;
@@ -372,9 +372,6 @@ header {
     margin-top: 20px;
     width: 98%;
   }
-}
-.cta-section .front-img-container img {
-  box-shadow: 0.05px 0.05px 1px 1px rgba(76, 82, 100, 0.2);
 }
 .features-section {
   margin-top: 120px;
@@ -519,6 +516,12 @@ header {
   height: 275px;
   margin-bottom: 15px;
 }
+.top-mentors-section .top-mentors-wrapper .mentors .mentor-pic:hover {
+  opacity: 0.6;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   .top-mentors-section .top-mentors-wrapper .mentors .mentor-pic {
     width: 55%;
@@ -528,6 +531,10 @@ header {
   height: 100%;
   width: 100%;
   box-shadow: 0.05px 0.05px 1px 1px rgba(76, 82, 100, 0.2);
+}
+.top-mentors-section .top-mentors-wrapper .mentors .small {
+  font-size: 1.35rem;
+  color: gray;
 }
 .second-cta {
   display: flex;
