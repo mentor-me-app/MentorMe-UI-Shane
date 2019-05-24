@@ -21,13 +21,22 @@
             <div class='navbar'>
                 <img class='menu' src='img/hamburger.png' alt='meun icon'>
                 <div class='links-wrapper'>
-                    <a class='links hidden' href="index.html">Home</a>
-                    <a class='links hidden' href="#LogIn">Log In</a>
-                    <a class='links sign-up hidden' href="#SignUp">Sign Up</a>
-                    <a class='links hidden' href="about.html">The Team</a>
+                    <a class='links none' href="index.html">Home</a>
+                    <a class='links none' href="#LogIn">Log In</a>
+                    <a class='links sign-up none' href="#SignUp">Sign Up</a>
+                    <a class='links none' href="about.html">The Team</a>
                 </div>
             </div>
         </header>
+
+<!-- Hidden nav, used in mobile -->
+
+        <div class='links-wrapper hamburger-wrapper'>
+            <a class='links hidden hamburger-links' href="index.html">Home</a>
+            <a class='links hidden hamburger-links' href="#LogIn">Log In</a>
+            <a class='links sign-up hidden hamburger-links' href="#SignUp">Sign Up</a>
+            <a class='links hidden hamburger-links' href="about.html">The Team</a>
+        </div>
 
         <div class='content'>
             <section class="cta-section">
@@ -38,7 +47,7 @@
                     </div>
                     <div class='cta-buttons'>
                         <a class='cta' href="https://mentor-me.netlify.com">Get Started</a>
-                        <a class='cta color' href="#"><span>How It Works</a>
+                        <a class='cta color' href='#'>How It Works</a>
                     </div>
                 </div>
                 <div class='front-img-container'>
@@ -103,7 +112,7 @@
             </section>
 
             <!-- PicSlider Component -->
-            <!-- <section class='picSlider'>
+            <section class='picSlider'>
                 <h2>Here's how it works</h2>
                 <div class='picSlider-wrapper'>
 
@@ -162,7 +171,7 @@
                     </div>
 
                 </div>
-            </section> -->
+            </section>
 
         <!-- Top Contrubutors Component  -->
             <section class='top-mentors-section'>

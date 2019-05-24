@@ -183,20 +183,21 @@ header {
       display: flex;
       flex-direction: row;
       background-color: white;
-      justify-content: space-around;
       align-items: center;
       z-index: 98;
-      
-      @media @phone {
-          display: flex;
           
       }
 
     .logo-container{
-        width: 300px; 
+        width: 300px;
+        
+        @media @phone{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .logo {
-            // float: left;
             display: block;
             width: 100%;
         }
@@ -211,8 +212,8 @@ header {
         }
 
         .menu{
-            width: 30px;
-            height: 30px; 
+            width: 25px;
+            height: 25px; 
             display: none; 
 
             @media @phone {
@@ -237,7 +238,6 @@ header {
                 text-decoration: none;
                 font-size: 1.25rem;
                 transition: 0.5s ease; 
-                
                 
                 }
 
@@ -271,7 +271,7 @@ header {
 
     }
         
-}
+
 
 
 .hidden{
@@ -282,6 +282,8 @@ header {
 
 .sticky {
     position: fixed;
+    display: flex; 
+    justify-content: space-between;
     top: 0;
     max-width: 950px; 
 
@@ -294,11 +296,40 @@ header {
     padding-top: 100px; 
 }
 
+.none{
+    @media @phone{
+        display: none; 
+    }
+}
+
+.hamburger-wrapper{
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 70px;
+        background:white; 
+        position: fixed;
+        top: 0; 
+    }
+    .hamburger-links{
+        @media @phone {
+        text-decoration: none;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid  #2B2F3B;
+        }
+        
+    }
+}
+
 
 .cta-section {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 100px;
 
     @media @phone {
         display: flex;
@@ -326,8 +357,8 @@ header {
         }
 
         .cta-buttons{
-            margin-top: 20px; 
-
+            margin-top: 20px;
+            
             @media @phone {
                 display: flex;
                 flex-direction: column;
@@ -348,8 +379,8 @@ header {
                 &:hover{
                     background-color: white;
                     color: #2B2F3B;
-                    border: 0.5px solid #2B2F3B;
                     cursor: pointer;
+                    text-decoration: underline;
                 }
             }
 
@@ -562,7 +593,6 @@ header {
         &:hover{
             background-color: white;
             color: #2B2F3B;
-            border: 0.5px solid #2B2F3B;
             cursor: pointer;
         }
     }

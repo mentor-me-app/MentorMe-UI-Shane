@@ -1,3 +1,13 @@
+//Mobile Nav Focus
+
+const allLinks = document.querySelectorAll('.hamburger-links')
+
+allLinks.forEach((link) => {
+    link.addEventListener('mouseover', (focusLink) =>{
+        focusLink.target.focus();
+    })
+})
+
 //NavBar
 
 window.onload = function() {fixed()}
@@ -20,7 +30,7 @@ document.onscroll = function() {fadeIn()}
 const features = document.querySelector('.features-wrapper');
 const featureScroll = features.offsetTop;
 function fadeIn() {
-    if((window.pageYOffset + 550) >= featureScroll) {
+    if((window.pageYOffset + 200) >= featureScroll) {
         features.classList.add('fadeIn');
         features.classList.remove('hide');
     } else {
@@ -33,13 +43,18 @@ function fadeIn() {
 
 const jump = document.querySelector('.color').onclick = function(){jumpTo()}
 
+
 function jumpTo() {
     const howItWorks = document.querySelector('.slider-container');
-    howItWorks.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    howItWorks.scrollIntoView({ block: 'end',  behavior: 'smooth' })
 }
 
-// const jumpTo = document.querySelector('.picSlider-wrapper').pageYOffset;
-// console.log(jumpTo)
+
+///picSlider Component 
+
+
+
+
 
 //Featured Mentors
 
@@ -69,7 +84,7 @@ mentors = [
 
 const nextButton = document.querySelector('.see-more');
 const names = Array.from(document.querySelectorAll('.next'));
-console.log(names)
+
 const mentorPicture = Array.from(document.querySelectorAll('.pic'));
 
 

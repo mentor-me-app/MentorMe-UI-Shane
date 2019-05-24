@@ -1,4 +1,4 @@
-
+///Scroll Nav
 window.onload = function() {fixed()}
 const header = document.querySelector('header');
 const headerStick = header.offsetTop;
@@ -10,27 +10,24 @@ function fixed(){
     }
 }
 
-// window.onload = function() {
-//     if (window.jQuery) {  
-//         // jQuery is loaded  
-//         alert("Yeah!");
-//     } else {
-//         // jQuery is not loaded
-//         alert("Doesn't Work");
-//     }
-// }
-// $(document).ready(function(){
-//     $('.team-profiles').click(function() {
-//         $('h5').fadeOut('slow');
-//     })
-// })
+//Mobile Nav Focus
 
-// $(document).ready(function () {
-//     $('.team').click(function(){
-//         $('h5').each(function() {
-//             $(this).fadeOut('slow');
-//         });
-//     });
+const allLinks = document.querySelectorAll('.hamburger-links')
+
+allLinks.forEach((link) => {
+    link.addEventListener('mouseover', (focusLink) =>{
+        focusLink.target.focus();
+    })
+})
+
+const hamburgerFocus = document.querySelector('.menu');
+hamburgerFocus.addEventListener('mouseover', ((focus) => {
+    focus.target.focus();
+
+}))
+
+
+//Fade in J Query
 
 $(document).ready(function() {
     $('.team').click(function() {

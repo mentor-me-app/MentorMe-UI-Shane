@@ -15,6 +15,7 @@
 
     <!-- Start of container -->
     <div class='container'>
+
         <header>
             <div class='logo-container'>
                 <img class='logo' src='img/logo.svg' alt='logo'>
@@ -22,18 +23,24 @@
             <div class='navbar'>
                 <img class='menu' src='img/hamburger.png' alt='meun icon'>
                 <div class='links-wrapper'>
-                    <a class='links hidden' href="index.html">Home</a>
-                    <a class='links hidden' href="#LogIn">Log In</a>
-                    <a class='links sign-up hidden' href="#SignUp">Sign Up</a>
-                    <a class='links hidden' href="about.html">The Team</a>
+                    <a class='links none' href="index.html">Home</a>
+                    <a class='links none' href="#LogIn">Log In</a>
+                    <a class='links sign-up none' href="#SignUp">Sign Up</a>
+                    <a class='links none' href="about.html">The Team</a>
                 </div>
             </div>
         </header>
+
+    <!-- Hidden nav, used in mobile -->
+
+        <div class='links-wrapper hamburger-wrapper'>
+            <a class='links hidden hamburger-links' href="index.html">Home</a>
+            <a class='links hidden hamburger-links' href="#LogIn">Log In</a>
+            <a class='links sign-up hidden hamburger-links' href="#SignUp">Sign Up</a>
+            <a class='links hidden hamburger-links' href="about.html">The Team</a>
+        </div>
     
     <!-- Meet the team header -->
-        <!-- <div class='background-img-container'> 
-            <img class='background-img' src='img/frontimg.jpeg'>
-        </div> -->
         <section class='meet-the-team-header'>
             <h2>Meet the Team</h2>
         </section>
@@ -42,7 +49,7 @@
 
         <section class='team-profiles'>
             <div class='team'>
-                <h5 class='hide'>Sulaiman (Yemi) Abidemi</h5>
+                <h5 class='hide smallerText'>Sulaiman (Yemi) Abidemi</h5>
                 <div class='img-container'>
                     <img src='/img/yemi.jpeg' alt='picture of Sulaiman (Yemi)'>
                 </div>
