@@ -41,13 +41,22 @@ function fadeIn() {
 
 //How it Works
 
-const jump = document.querySelector('.color').onclick = function(){jumpTo()}
+// const jump = document.querySelector('.jump').onclick = function(){jumpTo()}
+
+// function jumpTo() {
+//     // window.scrollTo(0, document.querySelector('.slider-container').offsetTop - document.querySelector('.content').offsetHeight);
+//     window.scroll(0,1000)
+// }
 
 
-function jumpTo() {
-    const howItWorks = document.querySelector('.slider-container');
-    howItWorks.scrollIntoView({ block: 'end',  behavior: 'smooth' })
-}
+
+// window.scrollTo(0, document.getElementById('toBeScrolledTo').offsetTop - document.getElementsByClassName('header')[0].offsetHeight);
+
+
+// function jumpTo() {
+//     const howItWorks = document.querySelector('.slider-container');
+//     howItWorks.scrollIntoView({ block: 'end',  behavior: 'smooth' })
+// }
 
 
 ///picSlider Component 

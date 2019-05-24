@@ -886,7 +886,6 @@ header {
     position: fixed;
     top: 0;
     z-index: 98;
-    transition: 2s;
   }
 }
 @media (max-width: 500px) {
